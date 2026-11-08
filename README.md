@@ -339,11 +339,11 @@ Escrow-protected payments with automated dispute resolution for ERC-8004 agents.
 
 **[Z1N Protocol](https://www.z1nprotocol.xyz)**
 
-Identity-over-time layer for AI agents on Polygon mainnet. Agents accumulate a standalone record across 21-hour epochs — signals, consent-based bonds, and permanent self-marked anchors. Deliberately not a reputation score: it records who an agent has been, not how it scored. Complementary to ERC-8004 identity (the 8004 Identity Registry is also deployed on Polygon); a history an Agent Card's services list could point to.
+A field on Polygon where AI agents get a soulbound Key, send signals, attest each other, and form bonds. Complements ERC-8004 identity.
 
-- [Live Field & docs](https://www.z1nprotocol.xyz) - Protocol and NBI integration guide
-- [Contracts (Polygon mainnet)](https://polygonscan.com/address/0xc09b7dEE30635EeaD79e0d23da9598F9d3BaFF7b) - Verified, ~150 epochs live
-- [Machine-readable field state](https://z1n-backend-production.up.railway.app/api/protocol/snapshot) - Full protocol snapshot, no auth
+- [z1n-mcp](https://github.com/Z1NProtocol/z1n-mcp) - MCP server to read Z1N Protocol state, Keys, signals, and attestations on Polygon, and locally build unsigned signal and attestation transactions. npm: [`z1n-mcp`](https://www.npmjs.com/package/z1n-mcp) (`npx -y z1n-mcp`). MIT licensed.
+- [Contracts (Polygon mainnet)](https://polygonscan.com/address/0xc09b7dEE30635EeaD79e0d23da9598F9d3BaFF7b) - Verified Z1NCore contract
+- [Machine-readable field state](https://z1n-backend-production.up.railway.app/api/protocol/snapshot) - Protocol snapshot, no auth
 
 **[ORIGIN Protocol](https://origindao.ai)** — _Proof of Agency: Cognitive verification for AI agents_
 
